@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <title>Prosermec - Productos Médicos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logo Prs.jpeg" alt="Logo de Prosermec">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor" id="inicio">
+        <h1>Bienvenidos a Prosermec</h1>
+        <p>Productos médicos de calidad para tu salud y bienestar</p>
+        <a href="#productos" class="btn">Ver Productos</a>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </div>
+    <section id="productos">
+        <h2>Nuestros Productos Destacados</h2>
+        <div class="carrusel">
+            <div>
+                <img src="Imagenes/tomar presion.jpeg" alt="Imagen del esfigmomanómetro">
+                <h3>Esfigmomanómetro</h3>
+                <p>El esfigmomanómetro es un dispositivo utilizado para medir la presión arterial. Es una herramienta esencial en entornos médicos para diagnosticar y monitorear condiciones relacionadas con la presión arterial. Nuestro esfigmomanómetro está diseñado con materiales duraderos y de alta calidad para garantizar mediciones precisas y confiables.</p>
+            </div>
+            <div>
+                <img src="Imagenes/Esteto.jpeg" alt="Imagen del Estetoscopio">
+                <h3>Estetoscopio</h3>
+                <p>Un instrumento médico confiable y preciso con acústica clara y diseño ergonómico para comodidad y durabilidad. Disponible en varios modelos y colores elegantes.</p>
+            </div>
+        </div>
+    </section>
+    <section id="nosotros">
+        <h2>Nuestra Misión y Visión</h2>
+        <h3>Misión</h3>
+        <p>Brindar productos médicos de calidad que aseguren la seguridad y satisfacción de nuestros clientes, con un servicio cercano y confiable.</p>
+        <h3>Visión</h3>
+        <p>Ser la opción preferida en productos médicos, reconocidos por nuestra excelencia en el servicio, innovación y compromiso con la salud de la comunidad.</p>
+        <h3>Lema</h3>
+        <p>Calidad y confianza para tu salud.</p>
+    </section>
+    <section id="testimonios">
+        <h2>Lo que Dicen Nuestros Clientes</h2>
+        <div class="testimonio">
+            <p>"Prosermec nos ha proporcionado productos de alta calidad y un servicio excepcional."</p>
+            <h4>- Cliente Satisfecho</h4>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Teléfono: (504) 94110504 | Correo: prosermechn@gmail.com</p>
+        <a href="https://www.facebook.com/prosermechonduras?mibextid=ZbWKwL" target="_blank">Visita nuestra página en Facebook</a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carrusel').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+</body>
+</html>
